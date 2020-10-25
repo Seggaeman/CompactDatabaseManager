@@ -134,6 +134,14 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Link>SqlServerCE3.5\SqlServerCE3_5Wrapper.dll</Link>
     </Content>
+    <Content Include="..\SqlServerCE4_0Wrapper\$(OutDir)System.Data.SqlServerCe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SqlServerCE4.0\System.Data.SqlServerCe.dll</Link>
+    </Content>
+    <Content Include="..\SqlServerCE4_0Wrapper\$(OutDir)SqlServerCE4_0Wrapper.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>SqlServerCE4.0\SqlServerCE4_0Wrapper.dll</Link>
+    </Content>    
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
@@ -149,6 +157,10 @@
       <Project>{f6e84bdf-9bda-4fb1-8e3e-e07bfa241289}</Project>
       <Name>SqlServerCE3_5Wrapper</Name>
       <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SqlServerCE4_0Wrapper\SqlServerCE4_0Wrapper.csproj">
+      <Project>{1e105c76-2734-4283-a8cd-9da6b2ea9e74}</Project>
+      <Name>SqlServerCE4_0Wrapper</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

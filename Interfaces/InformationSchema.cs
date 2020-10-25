@@ -57,6 +57,10 @@ namespace CompactDatabaseManager
                     result = ServerVersionNumber.VERSION_3_5;
                     break;
 
+                case 0x003d0900:
+                    result = ServerVersionNumber.VERSION_4_0;
+                    break;
+
                 default:
                     result = ServerVersionNumber.VERSION_UNKNOWN;
                     break;

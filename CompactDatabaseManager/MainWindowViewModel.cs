@@ -121,6 +121,9 @@ namespace CompactDatabaseManager
                 case ServerVersionNumber.VERSION_3_5:
                     IDatabaseInstance = SqlServerCE3_5Database.CreateInstance(databasePath, password);
                     break;
+                case ServerVersionNumber.VERSION_4_0:
+                    IDatabaseInstance = SqlServerCE4_0Database.CreateInstance(databasePath, password);
+                    break;
                 default:
                     break;
             }
